@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Top Screen</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <section class="main">
+      <div class="container-fluid position-relative">       
+        <div class="info-box position-absolute">
+          <div class="d-flex justify-content-end align-items-center gap-2" style="cursor: pointer;" id="hide_show">
+            <img src="./image/setting.svg" alt=""  style="width: 24px;height: 24px;">
+            <h6 class="fw-bold text-primary m-0 pe-2">Personal Information</h6>
+          </div>
+          <div class="info mt-2 pt-1 pb-3 px-2 rounded border shadow d-none" id="info">
+            <div class="text-end mb-3">
+              <img src="./image/clc.svg" alt="" class="" style="width: 14px;height: 14px;cursor: pointer;" id="clc">
+            </div>
+            <div class="text-center mb-4">
+              <img src="./image/profile image.jpg" alt="" class="rounded-circle">
+            </div>
+            <div class="d-flex align-items-center gap-2 mt-2">
+              <img src="./image/email.svg" alt="" class="" style="width: 20px;height: 20px;">
+              <p class="fw-bold m-0">admin-pyinnyarsubu14@gmail.com</p>
+            </div>
+            <div class="d-flex align-items-center gap-2 mt-2" id="upload_btn" style="cursor: pointer;">
+              <img src="./image/upload.svg" alt="" class="" style="width: 20px;height: 20px;">
+              <p class="fw-bold m-0">Upload profile image</p>
+            </div>
+            <form action="" class="d-none">
+              <input type="file" class="" id="upload_profile" accept="image/*">
+            </form>
+            <div class="w-100 bg-primary mt-3 rounded-3 text-center pb-1">
+              <a href="./forget_pass.html" class="text-decoration-none text-white">Change Password</a>
+            </div>
+          </div>
+        </div>
+        <div class="container py-5 min-vh-100 d-flex justify-content-center align-items-center flex-wrap">
+            <section>
+              <article class="box d-flex flex-wrap flex-md-nowrap align-items-center justify-content-center gap-3 pt-3 mx-auto">
+                <div class="img-container"style="width: 200px;">
+                  <img src="./image/icon.png" alt="" class="" style="width: 200px;">
+                </div>
+                <div class="text text-center px-3">
+                  <h4 class="text-danger fw-bold">Announcement</h4>
+                  <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at iaculis dui, sit amet pharetra tellus. Morbi eleifend commodo ante, sit amet elementum sapien venenatis a. Nam vestibulum volutpat urna. Sed in interdum nisl. Proin nec lib</p>
+                </div>
+              </article>
+              <article class="links mx-auto d-flex flex-wrap justify-content-center align-items-center gap-3 mt-3">
+                <div class="link-item d-flex">
+                  <img src="./image/item-1.svg" alt="" class="bg-primary px-2 py-1">
+                  <h6 class="fw-bold m-0 px-3 py-1">
+                    <a href="" class="text-primary text-decoration-none">Courses Search</a>
+                  </h6>
+                </div>
+                <div class="link-item d-flex">
+                  <h6 class="fw-bold m-0 px-3 py-1">
+                    <a href="" class="text-decoration-none">Exams Search</a>
+                  </h6>
+                  <img src="./image/item-2.svg" alt="" class="px-2 py-1">
+                </div>
+                <div class="link-item d-flex">
+                  <img src="./image/item-3.svg" alt="" class="px-2 py-1">
+                  <h6 class="fw-bold m-0 px-3 py-1">
+                    <a href="" class="text-decoration-none">Teacher Search</a>
+                  </h6>
+                </div>
+                <div class="link-item d-flex">
+                  <h6 class="fw-bold m-0 px-3 py-1">
+                    <a href="" class="text-decoration-none">Student Search</a>
+                  </h6>
+                  <img src="./image/item-4.svg" alt="" class="px-2 py-1">
+                </div>
+                <div class="link-item d-flex">
+                  <img src="./image/item-5.svg" alt="" class="px-2 py-1">
+                  <h6 class="fw-bold m-0 px-3 py-1">
+                    <a href="" class="text-decoration-none">Student payment Search</a>
+                  </h6>
+                </div>
+                <div class="link-item d-flex">
+                  <h6 class="fw-bold m-0 px-3 py-1">
+                    <a href="" class="text-decoration-none">Teacher payment search</a>
+                  </h6>
+                  <img src="./image/item-6.svg" alt="" class="px-2 py-1">
+                </div>
+              </article>
+            </section>
+          </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    let btn = document.querySelector('#upload_btn');
+    let upload_profile = document.querySelector('#upload_profile');
+    let info = document.querySelector('#info');
+    let hide_show = document.querySelector('#hide_show');
+    let clc = document.querySelector('#clc');
+    
+    clc.addEventListener('click',()=>{
+      info.classList.toggle('animation')
+      info.classList.toggle('d-none')
+    })
+    hide_show.addEventListener('click',()=>{
+      info.classList.toggle('animation')
+      info.classList.toggle('d-none')
+    })
+    btn.addEventListener('click',()=>upload_profile.click())
+  </script>
+</html>

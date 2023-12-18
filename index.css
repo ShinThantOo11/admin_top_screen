@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  font-size: 16px !important;
+}
+p,
+span {
+  font-size: 16px;
+}
+.text-primary {
+  color: #0f8173 !important;
+}
+.bg-primary {
+  background-color: #0f8173 !important;
+}
+.animation {
+  animation: animation 0.3s linear;
+}
+@keyframes animation {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+section.main {
+  background-image: url("./image/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+div.info-box {
+  overflow: hidden;
+  min-width: 350px;
+  max-width: 500px;
+  top: 30px;
+  right: 30px;
+}
+.info-box .info {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+}
+.info-box .info img {
+  width: 70px;
+  height: 70px;
+}
+article.box {
+  max-width: 780px;
+  background-color: #0f817330;
+  border-radius: 15px 50px 15px 50px;
+}
+article.links {
+  max-width: 780px;
+}
+article.links .link-item:nth-child(2) img {
+  background-color: #0085ff;
+}
+article.links .link-item:nth-child(3) img {
+  background-color: #ea9010;
+}
+article.links .link-item:nth-child(4) img {
+  background-color: #5d4a66;
+}
+article.links .link-item:nth-child(5) img {
+  background-color: #ff5652;
+}
+article.links .link-item:nth-child(6) img {
+  background-color: #8367c7;
+}
+article.links .link-item:nth-child(1) h6,
+article.links .link-item:nth-child(3) h6,
+article.links .link-item:nth-child(5) h6 {
+  border-radius: 0px 5px 5px 0px;
+}
+article.links .link-item:nth-child(2) h6,
+article.links .link-item:nth-child(4) h6,
+article.links .link-item:nth-child(6) h6 {
+  border-radius: 5px 0px 0px 5px;
+}
+article.links .link-item:nth-child(1) h6 {
+  border: 1px solid #0f8173;
+}
+article.links .link-item:nth-child(2) h6 {
+  border: 1px solid #0085ff;
+}
+article.links .link-item:nth-child(3) h6 {
+  border: 1px solid #ea9010;
+}
+article.links .link-item:nth-child(4) h6 {
+  border: 1px solid #5d4a66;
+}
+article.links .link-item:nth-child(5) h6 {
+  border: 1px solid #ff5652;
+}
+article.links .link-item:nth-child(6) h6 {
+  border: 1px solid #8367c7;
+}
+article.links .link-item:nth-child(2) h6 > a {
+  color: #0085ff;
+}
+article.links .link-item:nth-child(3) h6 > a {
+  color: #ea9010;
+}
+article.links .link-item:nth-child(4) h6 > a {
+  color: #5d4a66;
+}
+article.links .link-item:nth-child(5) h6 > a {
+  color: #ff5652;
+}
+article.links .link-item:nth-child(6) h6 > a {
+  color: #8367c7;
+}
+@media (max-width: 576px) {
+  section.info-box {
+    width: 300px !important;
+  }
+}
